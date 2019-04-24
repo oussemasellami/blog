@@ -1,0 +1,6 @@
+user_homepage:
+    path:     /
+    defaults: { _controller: techeventBundle:techevent:viewEvent }
+admin_dashboard:
+    path:     /admin
+    defaults: { _controller: ArticleBundle:Articlepub:add }

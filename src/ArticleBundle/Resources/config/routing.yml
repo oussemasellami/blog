@@ -1,0 +1,35 @@
+article_homepage:
+    path:     /
+    defaults: { _controller: techeventBundle:techevent:viewEvent }
+Create_post:
+    path:     /addpost
+    defaults: { _controller: ArticleBundle:Articlepub:add }
+list_post:
+    path:     /postslist
+    defaults: { _controller: ArticleBundle:Articlepub:listpost }
+
+update_post:
+    path:     /updatepost/{id}
+    defaults: { _controller: ArticleBundle:Articlepub:updatepost }
+
+delete_post:
+    path:     /deletepost/{id}
+    defaults: { _controller: ArticleBundle:Articlepub:deletepost }
+
+
+detailed_post:
+    path:     /detailedpost/{id}
+    defaults: { _controller: ArticleBundle:Articlepub:showdetailed }
+
+ajax_search:
+    path:     /search
+    defaults: { _controller: ArticleBundle:Articlepub:search }
+list_postadmin:
+    path:     /postslistad
+    defaults: { _controller: ArticleBundle:Articlepub:listpostadmin }
+add_comment:
+    path:     /addcomment
+    defaults: { _controller: ArticleBundle:Articlepub:addComment }
+delete_comment:
+    path:     /deletecomment/{id}
+    defaults: { _controller: ArticleBundle:Articlepub:deleteComment }
